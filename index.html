@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiyoshi's Passion Project</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<script>
+  function revealSection() {
+    const sections = document.querySelectorAll('section');
+    const triggerPoint = window.innerHeight / 1.2;
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerPoint) {
+        section.classList.add('reveal');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealSection);
+  revealSection();
+</script>
+
+<div class="container">
+  <div class="content">
+    <h1>Kiyoshi's <br> Passion <br> Project</h1>
+    <div class="icons">
+      <div class="blueprint-icon"></div>
+      <div class="hoodie-icon"></div>
+    </div>
+    <a class="explore-button" href="#about">Explore Here</a>
+  </div>
+</div>
+
+<!-- Project Section -->
+<section id="project">
+  <div class="project-container">
+    <h2>What About My Project?</h2>
+    <p>
+      For my project, I will be sewing together a hoodie from multiple materials to see how affordable it can be. I also chose this project to express my creativity in a piece that I can proudly wear.
+    </p>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p>
+      Hey! I'm Kiyoshi, a passionate young creator who loves fashion and design. I'm diving into sewing through this project to learn the craft and create my own unique hoodie. Let's see where this journey takes me!
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
