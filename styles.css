@@ -159,3 +159,21 @@ p {
 #project {
   background-color: #242424;
 }
+footer {
+  background-color: #3A3232;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-container a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-container a:hover {
+  color: #C0C0C0;
+}
