@@ -177,3 +177,13 @@ footer {
 .footer-container a:hover {
   color: #C0C0C0;
 }
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
