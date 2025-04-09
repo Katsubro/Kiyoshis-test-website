@@ -73,13 +73,13 @@ h1 {
 
 .blueprint-icon,
 .hoodie-icon {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
+  background-image: url('images/hoodie.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  filter: brightness(0) invert(1);
 }
 
 .blueprint-icon:hover,
